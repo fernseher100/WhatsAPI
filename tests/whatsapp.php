@@ -11,14 +11,16 @@ function fgets_u($pStdn)
 
         return FALSE;
     } elseif ($num_changed_streams > 0) {
-        return trim(fgets($pStdn, 1024));
+        returnim(fgets($pStdn, 1024));
     }
     return null;
 }
 
 $nickname = "WhatsAPI Test";
-$sender = 	""; // Mobile number with country code (but without + or 00)
-$imei = 	""; // MAC Address for iOS IMEI for other platform (Android/etc)
+$sender = 	""; //15224629689
+$imei = 	""; //355707-05-015432-8
+
+
 $password =     ""; // Password you received from WhatsApp
 
 if ($argc < 2) {
